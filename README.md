@@ -1,3 +1,3 @@
 ## 🚀 Deploy
 
-https://xenodochial-archimedes-b304dd.netlify.app/
+https://dropull.netlify.app/
