@@ -46,6 +46,14 @@ export const Card = styled(Link)`
   }
 `;
 
+export const InformationContainer = styled.div`
+  border-top: var(--dark_neutral) solid 1px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
 export const Name = styled.span`
   font-weight: bolder;
   font-size: 18px;
@@ -73,11 +81,4 @@ export const Image = styled.img`
   width: 100%;
   max-height: 280px;
   object-fit: cover;
-`;
-
-export const InformationContainer = styled.div`
-  border-top: var(--dark_neutral) solid 1px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
 `;
