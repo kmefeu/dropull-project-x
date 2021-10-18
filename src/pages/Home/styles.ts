@@ -11,7 +11,7 @@ export const SearchBarContainer = styled.div`
   top: 0;
   left: 5%;
   padding-left: 8px;
-
+  z-index: 5;
   @media screen and (max-width: 1200px) {
     width: 500px;
   }
