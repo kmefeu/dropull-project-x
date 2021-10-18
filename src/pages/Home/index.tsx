@@ -30,7 +30,7 @@ const Home: React.FC = () => {
           placeholder="search with the owner's address"
         />
       </SearchBarContainer>
-      <AssetCardList />;
+      <AssetCardList />
     </Container>
   );
 };
