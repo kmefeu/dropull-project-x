@@ -56,7 +56,16 @@ export const Collection = styled.span`
   margin-bottom: 15px;
 `;
 
-export const Price = styled.span``;
+export const Price = styled.div`
+  display: flex;
+  align-content: center;
+`;
+
+export const CoinImage = styled.img`
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+`;
 
 export const Date = styled.span``;
 

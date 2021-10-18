@@ -10,8 +10,10 @@ import {
   Price,
   Date,
   Row,
+  CoinImage,
 } from "./styles";
 import loadingImage from "assets/loading.gif";
+import eth from "assets/eth.svg";
 interface AssetCardProps {
   asset: Assets;
 }
@@ -34,7 +36,10 @@ const AssetCard: React.FC<AssetCardProps> = (
         <Collection>{asset?.collection?.name}</Collection>
         <Row>
           <Date>{asset?.last_sale?.event_timestamp}</Date>
-          <Price>{formatPrice(asset?.last_sale?.total_price)}</Price>
+          <Price>
+            <CoinImage src={eth} />
+            {formatPrice(asset?.last_sale?.total_price)}
+          </Price>
         </Row>
       </InformationContainer>
     </Card>
