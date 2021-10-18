@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: absolute;
+  display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  padding-bottom: 85px;
   color: var(--alt_background);
 `;
 interface BannerImageProps {
