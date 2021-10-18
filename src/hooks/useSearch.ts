@@ -5,6 +5,7 @@ import { Assets } from "interface/assets";
 const UseSearch = () => {
   const [loading, setLoading] = useState(false);
   const [dataAssets, setDataAssets] = useState<Assets[]>([]);
+  const [dataAssetsOwner, setDataAssetsOwner] = useState<Assets[]>([]);
   const [owner, setOwner] = useState("");
   const [offset, setOffset] = useState(20);
   const [offsetBase, setOffsetBase] = useState(0);
@@ -24,7 +25,7 @@ const UseSearch = () => {
             assets.length < 20 && setEndOfList(() => true);
           })
         : await getData(noOwnerUrl).then(({ assets }) => {
-            setDataAssets((s) => [...s, ...assets]);
+            setDataAssetsOwner((s) => [...s, ...assets]);
             assets.length < 20 && setEndOfList(() => true);
           });
       setOffsetBase((s) => s + offset);
@@ -33,22 +34,6 @@ const UseSearch = () => {
 
     request();
   }, [endOfList, loading, offset, offsetBase, owner]);
-
-  useEffect(() => {
-    console.log("loading = " + loading);
-  }, [loading]);
-
-  useEffect(() => {
-    console.log("offset = " + offset);
-  }, [offset]);
-
-  useEffect(() => {
-    console.log("offsetBase = " + offsetBase);
-  }, [offsetBase]);
-
-  useEffect(() => {
-    console.log("endOfList = " + endOfList);
-  }, [endOfList]);
 
   return {
     loading,
@@ -64,6 +49,8 @@ const UseSearch = () => {
     loadCallsUpdate,
     endOfList,
     setEndOfList,
+    dataAssetsOwner,
+    setDataAssetsOwner,
   };
 };
 

@@ -7,37 +7,43 @@ html,body{
     margin: 0px;
     padding: 0px;
     font-family: 'Rambla', sans-serif;
+    background-color: var(--dirt-white);
 }
 
 /* width */
 ::-webkit-scrollbar {
   width: 15px;
   transition: 0.5s ease-in-out;
-  background: #E2E2E2;
+  background: var(--neutral);
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   display: none;
-  background: #E2E2E2;
+  background: var(--neutral);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #191919;
+  background: var(--alt_background);
   border-radius: 7.5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #13FF00;
+  background: var(--loud);
+}
+
+:root{
+   --background: #0F0f0f;
+ --alt_background: #191919;
+ --loud: #13FF00;
+ --primary: #77f961;
+ --neutral: #E2E2E2;
+ --dark_neutral: #bdbdbd;
+ --alt_neutral: #c4c4c4;
+ --white:#fff;
+--dirt-white: #f0f0f0 ;
+
 }
 `;
-
-// --chakra-colors-background: #0F0f0f;
-// --chakra-colors-alt_background: #191919;
-// --chakra-colors-loud: #13FF00;
-// --chakra-colors-primary: #77f961;
-// --chakra-colors-neutral: #E2E2E2;
-// --chakra-colors-dark_neutral: #bdbdbd;
-// --chakra-colors-alt_neutral: #c4c4c4;

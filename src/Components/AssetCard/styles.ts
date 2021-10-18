@@ -1,12 +1,13 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
-  background-color: #f0f0f0;
+  background-color: var(--dirt-white);
   padding: 0 5%;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  color: #191919;
+  color: var(--alt_background);
 `;
 
 export const Row = styled.div`
@@ -15,17 +16,19 @@ export const Row = styled.div`
   justify-content: space-between;
 `;
 
-export const Card = styled.div`
+export const Card = styled(Link)`
   overflow: hidden;
   margin: 8px;
   background-color: #fff;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  border: #bdbdbd solid 1px;
+  border: var(--dark_neutral) solid 1px;
+  color: var(--alt_background);
   transition: 0.25s;
   font-size: 12px;
   cursor: pointer;
+  text-decoration: none;
 
   :hover {
     transform: scale(1.015);
@@ -38,16 +41,8 @@ export const Name = styled.span`
   margin-bottom: 5px;
 `;
 
-export const Description = styled.span`
-  color: blue;
-`;
-
 export const Collection = styled.span`
   margin-bottom: 15px;
-`;
-
-export const Creator = styled.span`
-  margin-bottom: 5px;
 `;
 
 export const Price = styled.span``;
@@ -61,7 +56,7 @@ export const Image = styled.img`
 `;
 
 export const InformationContainer = styled.div`
-  border-top: #bdbdbd solid 1px;
+  border-top: var(--dark_neutral) solid 1px;
   padding: 15px;
   display: flex;
   flex-direction: column;

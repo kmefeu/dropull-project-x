@@ -1,0 +1,293 @@
+{
+  "id": 74249854,
+  "token_id": "91321981255833606897973224722031697500117164304167139448040198229862553485313",
+  "num_sales": 0,
+  "background_color": null,
+  "image_url": "https://storage.opensea.io/files/c43cc4a23b3d7972347cd3a915385446.svg",
+  "image_preview_url": "https://storage.opensea.io/files/c43cc4a23b3d7972347cd3a915385446.svg",
+  "image_thumbnail_url": "https://storage.opensea.io/files/c43cc4a23b3d7972347cd3a915385446.svg",
+  "image_original_url": null,
+  "animation_url": null,
+  "animation_original_url": null,
+  "name": "Lithoniel Keawarin",
+  "description": null,
+  "external_link": "https://cryptohamsters.co/hamsters/16345008007431",
+  "asset_contract": {
+    "address": "0x495f947276749ce646f68ac8c248420045cb7b5e",
+    "asset_contract_type": "semi-fungible",
+    "created_date": "2020-12-02T17:40:53.232025",
+    "name": "OpenSea Collection",
+    "nft_version": null,
+    "opensea_version": "2.0.0",
+    "owner": 102384,
+    "schema_name": "ERC1155",
+    "symbol": "OPENSTORE",
+    "total_supply": null,
+    "description": "",
+    "external_link": null,
+    "image_url": null,
+    "default_to_fiat": false,
+    "dev_buyer_fee_basis_points": 0,
+    "dev_seller_fee_basis_points": 0,
+    "only_proxied_transfers": false,
+    "opensea_buyer_fee_basis_points": 0,
+    "opensea_seller_fee_basis_points": 250,
+    "buyer_fee_basis_points": 0,
+    "seller_fee_basis_points": 250,
+    "payout_address": null
+  },
+  "permalink": "https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/91321981255833606897973224722031697500117164304167139448040198229862553485313",
+  "collection": {
+    "payment_tokens": [
+      {
+        "id": 13689077,
+        "symbol": "ETH",
+        "address": "0x0000000000000000000000000000000000000000",
+        "image_url": "https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg",
+        "name": "Ether",
+        "decimals": 18,
+        "eth_price": 1,
+        "usd_price": 3802.2
+      },
+      {
+        "id": 12182941,
+        "symbol": "DAI",
+        "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+        "image_url": "https://storage.opensea.io/files/8ef8fb3fe707f693e57cdbfea130c24c.svg",
+        "name": "Dai Stablecoin",
+        "decimals": 18,
+        "eth_price": 0.00026223,
+        "usd_price": 0.999874
+      },
+      {
+        "id": 12982311,
+        "symbol": "MATIC",
+        "address": "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0",
+        "image_url": "https://lh3.googleusercontent.com/w_HwViosyyCvZhCShTgqXV4s3Ph2qO_b2VgU27oRMUyG2XQB72ym0jNLhmInBsBKjvuWAd5cgMKjtQeHSqmFbPrz",
+        "name": "Matic Token",
+        "decimals": 18,
+        "eth_price": 0.000224561180432,
+        "usd_price": 1.48
+      },
+      {
+        "id": 4645681,
+        "symbol": "WETH",
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "image_url": "https://storage.opensea.io/files/accae6b6fb3888cbff27a013729c22dc.svg",
+        "name": "Wrapped Ether",
+        "decimals": 18,
+        "eth_price": 1,
+        "usd_price": 3802.2
+      },
+      {
+        "id": 4403908,
+        "symbol": "USDC",
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "image_url": "https://storage.opensea.io/files/749015f009a66abcb3bbb3502ae2f1ce.svg",
+        "name": "USD Coin",
+        "decimals": 6,
+        "eth_price": 0.000551436563967,
+        "usd_price": 1
+      },
+      {
+        "id": 16086195,
+        "symbol": "BNB",
+        "address": "0xb8c77482e45f1f44de1745f52c74426c631bdd52",
+        "image_url": "https://lh3.googleusercontent.com/cQWfYsXbWalZEYxHbYAlYybjkfHxNIA8iYnXFwi7jOyL1retT7oBYj67PQlJZKbwLQD_u0GKBba7uzLDfIy5XuiiV9BA-x-aM2ZI4Q=s120",
+        "name": "BNB V2",
+        "decimals": 18,
+        "eth_price": null,
+        "usd_price": null
+      }
+    ],
+    "primary_asset_contracts": [],
+    "traits": {
+      "AllStats": {
+        "min": 99,
+        "max": 99
+      }
+    },
+    "stats": {
+      "one_day_volume": 0.144,
+      "one_day_change": 0.3457943925233644,
+      "one_day_sales": 12,
+      "one_day_average_price": 0.011999999999999999,
+      "seven_day_volume": 0.67,
+      "seven_day_change": 0.4164904862579283,
+      "seven_day_sales": 51,
+      "seven_day_average_price": 0.013137254901960785,
+      "thirty_day_volume": 3.20128396119366,
+      "thirty_day_change": -0.46734859884569746,
+      "thirty_day_sales": 288,
+      "thirty_day_average_price": 0.011115569309700209,
+      "total_volume": 13.8173730297865,
+      "total_sales": 1539,
+      "total_supply": 9147,
+      "count": 9147,
+      "num_owners": 1210,
+      "average_price": 0.008978150116820339,
+      "num_reports": 0,
+      "market_cap": 120.1664705882353,
+      "floor_price": 0.01
+    },
+    "banner_image_url": "https://lh3.googleusercontent.com/U83Qfnuw9IDefBGkUrjVzHX-hGO7yViQaHFz55UYmrgPSSQX9bnsXuLTxlJkHHLdY6Vox0R2Ad8ISft02lcbIucGrh2YTxLkZ44fRU4=s2500",
+    "chat_url": null,
+    "created_date": "2021-06-10T01:49:35.180218",
+    "default_to_fiat": false,
+    "description": "CryptoHamsters are composed of DNA with 18 genetic instructions, generated randomly. Create your team and be prepared!\n\n🐹 🚀\n\nThe older released CryptoHamsters token will have privileges in the future, so take the opportunity.\n\n\n### **SOCIAL NETWORKS**\n\n [Twitter](https://twitter.com/0xHamsters) • [Instagram](https://www.instagram.com/cryptohamsters/)\n\nJoin the [Discord](https://discord.gg/cryptohamsters)  and live the community, especially if you already have a hamster.\n\n### **CONTACT**\nSuggestions, acknowledgment, bug reports: **contact@cryptohamsters.co**\n\nBe sure to visit the **[CryptoHamsters.co](http://cryptohamsters.co/)** to stay up to date.",
+    "dev_buyer_fee_basis_points": "0",
+    "dev_seller_fee_basis_points": "250",
+    "discord_url": "https://discord.gg/cryptohamsters",
+    "display_data": {
+      "card_display_style": "contain"
+    },
+    "external_url": "https://cryptohamsters.co",
+    "featured": false,
+    "featured_image_url": "https://lh3.googleusercontent.com/U83Qfnuw9IDefBGkUrjVzHX-hGO7yViQaHFz55UYmrgPSSQX9bnsXuLTxlJkHHLdY6Vox0R2Ad8ISft02lcbIucGrh2YTxLkZ44fRU4=s300",
+    "hidden": false,
+    "safelist_request_status": "approved",
+    "image_url": "https://lh3.googleusercontent.com/0GER9b0kES2jCcUvkWTs9kq0ChBXHKwzaLbyJbZuVhEB2vib4idUzxPN-n960BZ-XGQsJpqJSe5j5IC-uctM2SdTEv13hew5TTy3gQ=s120",
+    "is_subject_to_whitelist": false,
+    "large_image_url": "https://lh3.googleusercontent.com/U83Qfnuw9IDefBGkUrjVzHX-hGO7yViQaHFz55UYmrgPSSQX9bnsXuLTxlJkHHLdY6Vox0R2Ad8ISft02lcbIucGrh2YTxLkZ44fRU4=s300",
+    "medium_username": "cryptohamsters",
+    "name": "Hamsters",
+    "only_proxied_transfers": false,
+    "opensea_buyer_fee_basis_points": "0",
+    "opensea_seller_fee_basis_points": "250",
+    "payout_address": "0xb1e3b5b9a23e7507c6d43dd570a1473d477e1def",
+    "require_email": false,
+    "short_description": null,
+    "slug": "hamsters",
+    "telegram_url": null,
+    "twitter_username": "0xHamsters",
+    "instagram_username": "cryptohamsters",
+    "wiki_url": null
+  },
+  "decimals": null,
+  "token_metadata": null,
+  "owner": {
+    "user": {
+      "username": "NullAddress"
+    },
+    "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/1.png",
+    "address": "0x0000000000000000000000000000000000000000",
+    "config": ""
+  },
+  "sell_orders": null,
+  "creator": {
+    "user": {
+      "username": "Hamsters"
+    },
+    "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/24.png",
+    "address": "0xc9e668e1abc646cb1fb6e0d65ec031029681fa47",
+    "config": ""
+  },
+  "traits": [],
+  "last_sale": null,
+  "top_bid": null,
+  "listing_date": null,
+  "is_presale": true,
+  "transfer_fee_payment_token": null,
+  "transfer_fee": null,
+  "related_assets": [],
+  "orders": [
+    {
+      "created_date": "2021-10-17T20:01:55.324066",
+      "closing_date": "2022-04-17T20:01:25",
+      "closing_extendable": false,
+      "expiration_time": 1650225685,
+      "listing_time": 1634500800,
+      "order_hash": "0x469a86eafd11d9ed0dc81b4db0cce256661bcd383be66b966bc83bedc2b2d474",
+      "metadata": {
+        "asset": {
+          "id": "91321981255833606897973224722031697500117164304167139448040198229862553485313",
+          "address": "0x495f947276749ce646f68ac8c248420045cb7b5e",
+          "quantity": "1"
+        },
+        "schema": "ERC1155"
+      },
+      "exchange": "0x7be8076f4ea4a4ad08075c2508e481d6c946d12b",
+      "maker": {
+        "user": {
+          "username": "Hamsters"
+        },
+        "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/24.png",
+        "address": "0xc9e668e1abc646cb1fb6e0d65ec031029681fa47",
+        "config": ""
+      },
+      "taker": {
+        "user": {
+          "username": "NullAddress"
+        },
+        "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/1.png",
+        "address": "0x0000000000000000000000000000000000000000",
+        "config": ""
+      },
+      "current_price": "20000000000000000.00000000000",
+      "current_bounty": "200000000000000",
+      "bounty_multiple": "0.01",
+      "maker_relayer_fee": "500",
+      "taker_relayer_fee": "0",
+      "maker_protocol_fee": "0",
+      "taker_protocol_fee": "0",
+      "maker_referrer_fee": "0",
+      "fee_recipient": {
+        "user": {
+          "username": "OS-Wallet"
+        },
+        "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/28.png",
+        "address": "0x5b3256965e7c3cf26e11fcaf296dfc8807c01073",
+        "config": "verified"
+      },
+      "fee_method": 1,
+      "side": 1,
+      "sale_kind": 0,
+      "target": "0x495f947276749ce646f68ac8c248420045cb7b5e",
+      "how_to_call": 0,
+      "calldata": "0xf242432a000000000000000000000000c9e668e1abc646cb1fb6e0d65ec031029681fa470000000000000000000000000000000000000000000000000000000000000000c9e668e1abc646cb1fb6e0d65ec031029681fa47000000000050750000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000000",
+      "replacement_pattern": "0x000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "static_target": "0x0000000000000000000000000000000000000000",
+      "static_extradata": "0x",
+      "payment_token": "0x0000000000000000000000000000000000000000",
+      "payment_token_contract": {
+        "id": 1,
+        "symbol": "ETH",
+        "address": "0x0000000000000000000000000000000000000000",
+        "image_url": "https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg",
+        "name": "Ether",
+        "decimals": 18,
+        "eth_price": "1.000000000000000",
+        "usd_price": "3813.769999999999982000"
+      },
+      "base_price": "20000000000000000",
+      "extra": "0",
+      "quantity": "1",
+      "salt": "25356591267834804364355932242130079998613603506028489096711356957867563890911",
+      "v": 28,
+      "r": "0x165b3dc8c6546e3ece6a1e7dbd330fcce652325b046009b30d1fa9895070b65f",
+      "s": "0x60fb4eff75c3a8364d931cdef80b9e121cbdf3e5b7e14c2eae3c5cee177fdb65",
+      "approved_on_chain": false,
+      "cancelled": false,
+      "finalized": false,
+      "marked_invalid": false,
+      "prefixed_hash": "0xdc7ac273fbd22c2ca83e2660caa35ed281b2efb9534eebb795e93ce879feeab6"
+    }
+  ],
+  "auctions": [],
+  "supports_wyvern": true,
+  "top_ownerships": [
+    {
+      "owner": {
+        "user": {
+          "username": "Hamsters"
+        },
+        "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/24.png",
+        "address": "0xc9e668e1abc646cb1fb6e0d65ec031029681fa47",
+        "config": ""
+      },
+      "quantity": "1"
+    }
+  ],
+  "ownership": null,
+  "highest_buyer_commitment": null
+}

@@ -3,30 +3,37 @@ export interface Assets {
   token_id: string;
   num_sales: number;
   background_color: any;
-  image_url: string | null;
-  image_preview_url: string | null;
+  image_url: string;
+  image_preview_url: string;
   image_thumbnail_url: string;
-  image_original_url: string;
+  image_original_url: any;
   animation_url: any;
   animation_original_url: any;
   name: string;
   description: any;
-  external_link: any;
+  external_link: string;
   asset_contract: AssetContract;
   permalink: string;
   collection: Collection;
-  decimals: number;
-  token_metadata: string;
+  decimals: any;
+  token_metadata: any;
   owner: Owner;
   sell_orders: any;
   creator: Creator;
-  traits: Trait[];
-  last_sale: LastSale;
+  traits: any[];
+  last_sale: any;
   top_bid: any;
   listing_date: any;
   is_presale: boolean;
   transfer_fee_payment_token: any;
   transfer_fee: any;
+  related_assets: any[];
+  orders: Order[];
+  auctions: any[];
+  supports_wyvern: boolean;
+  top_ownerships: TopOwnership[];
+  ownership: any;
+  highest_buyer_commitment: any;
 }
 
 export interface AssetContract {
@@ -34,15 +41,15 @@ export interface AssetContract {
   asset_contract_type: string;
   created_date: string;
   name: string;
-  nft_version: string;
-  opensea_version: any;
+  nft_version: any;
+  opensea_version: string;
   owner: number;
   schema_name: string;
   symbol: string;
-  total_supply: string;
+  total_supply: any;
   description: string;
-  external_link: string;
-  image_url: string;
+  external_link: any;
+  image_url: any;
   default_to_fiat: boolean;
   dev_buyer_fee_basis_points: number;
   dev_seller_fee_basis_points: number;
@@ -51,10 +58,14 @@ export interface AssetContract {
   opensea_seller_fee_basis_points: number;
   buyer_fee_basis_points: number;
   seller_fee_basis_points: number;
-  payout_address: string;
+  payout_address: any;
 }
 
 export interface Collection {
+  payment_tokens: PaymentToken[];
+  primary_asset_contracts: any[];
+  traits: Traits;
+  stats: Stats;
   banner_image_url: string;
   chat_url: any;
   created_date: string;
@@ -66,12 +77,12 @@ export interface Collection {
   display_data: DisplayData;
   external_url: string;
   featured: boolean;
-  featured_image_url: any;
+  featured_image_url: string;
   hidden: boolean;
   safelist_request_status: string;
   image_url: string;
   is_subject_to_whitelist: boolean;
-  large_image_url: any;
+  large_image_url: string;
   medium_username: string;
   name: string;
   only_proxied_transfers: boolean;
@@ -87,6 +98,50 @@ export interface Collection {
   wiki_url: any;
 }
 
+export interface PaymentToken {
+  id: number;
+  symbol: string;
+  address: string;
+  image_url: string;
+  name: string;
+  decimals: number;
+  eth_price?: number;
+  usd_price?: number;
+}
+
+export interface Traits {
+  AllStats: AllStats;
+}
+
+export interface AllStats {
+  min: number;
+  max: number;
+}
+
+export interface Stats {
+  one_day_volume: number;
+  one_day_change: number;
+  one_day_sales: number;
+  one_day_average_price: number;
+  seven_day_volume: number;
+  seven_day_change: number;
+  seven_day_sales: number;
+  seven_day_average_price: number;
+  thirty_day_volume: number;
+  thirty_day_change: number;
+  thirty_day_sales: number;
+  thirty_day_average_price: number;
+  total_volume: number;
+  total_sales: number;
+  total_supply: number;
+  count: number;
+  num_owners: number;
+  average_price: number;
+  num_reports: number;
+  market_cap: number;
+  floor_price: number;
+}
+
 export interface DisplayData {
   card_display_style: string;
 }
@@ -99,7 +154,7 @@ export interface Owner {
 }
 
 export interface User {
-  username: string;
+  username: string | null;
 }
 
 export interface Creator {
@@ -113,56 +168,63 @@ export interface User2 {
   username: string;
 }
 
-export interface Trait {
-  trait_type: string;
-  value: string;
-  display_type: any;
-  max_value: any;
-  trait_count: number;
-  order: any;
+export interface Order {
+  created_date: string;
+  closing_date: string;
+  closing_extendable: boolean;
+  expiration_time: number;
+  listing_time: number;
+  order_hash: string;
+  metadata: Metadata;
+  exchange: string;
+  maker: Maker;
+  taker: Taker;
+  current_price: string;
+  current_bounty: string;
+  bounty_multiple: string;
+  maker_relayer_fee: string;
+  taker_relayer_fee: string;
+  maker_protocol_fee: string;
+  taker_protocol_fee: string;
+  maker_referrer_fee: string;
+  fee_recipient: FeeRecipient;
+  fee_method: number;
+  side: number;
+  sale_kind: number;
+  target: string;
+  how_to_call: number;
+  calldata: string;
+  replacement_pattern: string;
+  static_target: string;
+  static_extradata: string;
+  payment_token: string;
+  payment_token_contract: PaymentTokenContract;
+  base_price: string;
+  extra: string;
+  quantity: string;
+  salt: string;
+  v: number;
+  r: string;
+  s: string;
+  approved_on_chain: boolean;
+  cancelled: boolean;
+  finalized: boolean;
+  marked_invalid: boolean;
+  prefixed_hash: string;
 }
 
-export interface LastSale {
+export interface Metadata {
   asset: Asset;
-  asset_bundle: any;
-  event_type: string;
-  event_timestamp: string;
-  auction_type: any;
-  total_price: string;
-  payment_token: PaymentToken;
-  transaction: Transaction;
-  created_date: string;
-  quantity: string;
+  schema: string;
 }
 
 export interface Asset {
-  token_id: string;
-  decimals: number;
-}
-
-export interface PaymentToken {
-  id: number;
-  symbol: string;
+  id: string;
   address: string;
-  image_url: string;
-  name: string;
-  decimals: number;
-  eth_price: string;
-  usd_price: string;
+  quantity: string;
 }
 
-export interface Transaction {
-  block_hash: string;
-  block_number: string;
-  from_account: FromAccount;
-  id: number;
-  timestamp: string;
-  to_account: ToAccount;
-  transaction_hash: string;
-  transaction_index: string;
-}
-
-export interface FromAccount {
+export interface Maker {
   user: User3;
   profile_img_url: string;
   address: string;
@@ -173,7 +235,7 @@ export interface User3 {
   username: string;
 }
 
-export interface ToAccount {
+export interface Taker {
   user: User4;
   profile_img_url: string;
   address: string;
@@ -181,5 +243,43 @@ export interface ToAccount {
 }
 
 export interface User4 {
+  username: string;
+}
+
+export interface FeeRecipient {
+  user: User5;
+  profile_img_url: string;
+  address: string;
+  config: string;
+}
+
+export interface User5 {
+  username: string;
+}
+
+export interface PaymentTokenContract {
+  id: number;
+  symbol: string;
+  address: string;
+  image_url: string;
+  name: string;
+  decimals: number;
+  eth_price: string;
+  usd_price: string;
+}
+
+export interface TopOwnership {
+  owner: Owner2;
+  quantity: string;
+}
+
+export interface Owner2 {
+  user: User6;
+  profile_img_url: string;
+  address: string;
+  config: string;
+}
+
+export interface User6 {
   username: string;
 }

@@ -8,7 +8,11 @@ const Routes: React.FC = () => {
     <Router>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path={"/asset/:id"} exact component={AssetDetails} />
+        <Route
+          path={"/asset/:assetContractAddress/:tokenId"}
+          exact
+          component={AssetDetails}
+        />
       </Switch>
     </Router>
   );

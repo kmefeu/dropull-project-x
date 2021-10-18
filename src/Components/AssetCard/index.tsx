@@ -1,6 +1,6 @@
 import { Assets } from "interface/assets";
 import React from "react";
-import { formatDate } from "utils/formatDate";
+import formatPrice from "utils/formatPrice";
 import {
   Collection,
   Image,
@@ -11,7 +11,7 @@ import {
   Date,
   Row,
 } from "./styles";
-
+import loadingImage from "assets/loading.gif";
 interface AssetCardProps {
   asset: Assets;
 }
@@ -20,23 +20,21 @@ const AssetCard: React.FC<AssetCardProps> = (
   { asset }: AssetCardProps,
   index
 ) => {
-  const price = () => {
-    if (asset.last_sale.total_price) {
-      return `${+asset.last_sale?.total_price / 1000000000000000000}`;
-    }
-    return "New Asset";
-  };
-
   return asset?.image_preview_url && asset?.name ? (
-    <Card key={index}>
-      <Image src={asset?.image_preview_url} alt={asset?.description} />
+    <Card
+      key={index}
+      to={`/asset/${asset?.asset_contract.address}/${asset?.token_id}`}
+    >
+      <Image
+        src={asset?.image_preview_url || loadingImage}
+        alt={asset?.description}
+      />
       <InformationContainer>
         <Name>{asset?.name}</Name>
-        <Name>{asset?.id}</Name>
         <Collection>{asset?.collection?.name}</Collection>
         <Row>
           <Date>{asset?.last_sale?.event_timestamp}</Date>
-          <Price>{price}</Price>
+          <Price>{formatPrice(asset?.last_sale?.total_price)}</Price>
         </Row>
       </InformationContainer>
     </Card>

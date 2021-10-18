@@ -17,6 +17,8 @@ export type MainContextProps = {
   endOfList: boolean;
   setEndOfList: Dispatch<SetStateAction<boolean>>;
   loadCallsUpdate: () => void;
+  dataAssetsOwner: Assets[];
+  setDataAssetsOwner: Dispatch<SetStateAction<Assets[]>>;
 };
 export const MainContext = createContext<MainContextProps>({
   loading: false,
@@ -32,6 +34,8 @@ export const MainContext = createContext<MainContextProps>({
   endOfList: false,
   setEndOfList: () => {},
   loadCallsUpdate: () => {},
+  dataAssetsOwner: [],
+  setDataAssetsOwner: () => {},
 });
 
 interface MainContextProviderProps {
@@ -55,6 +59,8 @@ export const MainContextProvider: React.FC<MainContextProviderProps> = ({
     loadCallsUpdate,
     endOfList,
     setEndOfList,
+    dataAssetsOwner,
+    setDataAssetsOwner,
   } = UseSearch();
 
   return (
@@ -73,6 +79,8 @@ export const MainContextProvider: React.FC<MainContextProviderProps> = ({
         loadCallsUpdate,
         endOfList,
         setEndOfList,
+        dataAssetsOwner,
+        setDataAssetsOwner,
       }}
     >
       {children}

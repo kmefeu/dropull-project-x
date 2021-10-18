@@ -5,15 +5,25 @@ import { Container } from "./styles";
 import InfiniteScrollTrigger from "Components/InfiniteScrollTrigger";
 import { MainContext } from "context/MainContext";
 const AssetCardList: React.FC = () => {
-  const { dataAssets, loading, loadCallsUpdate, endOfList } =
-    useContext(MainContext);
+  const {
+    dataAssets,
+    dataAssetsOwner,
+    owner,
+    loading,
+    loadCallsUpdate,
+    endOfList,
+  } = useContext(MainContext);
 
   return (
     <>
       <Container>
-        {dataAssets?.map((asset: Assets, index) => {
-          return <AssetCard asset={asset} key={index} />;
-        })}
+        {owner.length > 0
+          ? dataAssets?.map((asset: Assets, index) => {
+              return <AssetCard asset={asset} key={index} />;
+            })
+          : dataAssetsOwner?.map((asset: Assets, index) => {
+              return <AssetCard asset={asset} key={index} />;
+            })}
       </Container>
       <InfiniteScrollTrigger
         loading={loading}
