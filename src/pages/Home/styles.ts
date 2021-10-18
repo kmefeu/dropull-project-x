@@ -11,6 +11,15 @@ export const SearchBarContainer = styled.div`
   top: 0;
   left: 5%;
   padding-left: 8px;
+
+  @media screen and (max-width: 1200px) {
+    width: 500px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 300px;
+  }
+
   input {
     font-size: 16px;
     box-sizing: border-box;

@@ -46,11 +46,18 @@ export const AssetContainer = styled.div`
   overflow: hidden;
   background-color: var(--white);
   border: var(--dark_neutral) solid 1px;
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 export const Image = styled.img`
   width: 55%;
   object-fit: cover;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+  }
 `;
 
 export const InformationContainer = styled.div`
@@ -58,6 +65,10 @@ export const InformationContainer = styled.div`
   padding: 25px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    padding: 5px;
+  }
 `;
 
 export const NameRow = styled.div`
